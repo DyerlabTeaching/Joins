@@ -43,3 +43,9 @@ vignettes/*.pdf
 /.quarto/
 README.html
 README_files/*
+
+Districts.zip
+Zoning_Districts.*
+Centerlines-shp/
+Roads.zip
+__MACOSX/*

@@ -1,26 +1,70 @@
 ---
-title: "In Class Activity"
+title: "Joins In Class Activity"
 format: 
   html:
     code-tools: true
     toc: false
+execute: 
+  echo: true
 ---
-
-## Examples
 
 
 This in-class file is used for demonstrating individual examples related to this topic and is kept as a persistent record of examples provided during lectures.
 
 ## The Data
 
+The data we will be using for this is from a library that has several `data.frame` objects related to flights out of three New York airports
 
-## Vectors
+```{r}
+library( nycflights13 )
+```
 
-## Matrices
+The data.frames include four `data.frame` objects with external data (each of which has a *primary key*), including:
 
-## Lists
+```{r}
+head(airlines)
+```
 
-## Data Frames
+```{r}
+head( airports )
+```
+
+```{r}
+head( planes )
+```
+
+```{r}
+head(weather)
+```
+
+And one *large* `data.frame` that has columns that are *foreign keys* to those previous `data.frame` objects.
+
+```{r}
+names( flights )
+```
+
+
+## Asking Questions
+
+Using these data, we will asks some of the following questions about the data.
+
+
+
+> Which NYC airport has the worst departure delays?
+
+
+
+> Which models of aircraft have the largest average flight distance?
+
+
+
+> Which airlines has the most has the most on-time arrivals?
+
+
+
+
+
+
 
 
 
