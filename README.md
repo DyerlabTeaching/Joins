@@ -14,15 +14,15 @@ At the end of this topic, you should be able to:
  - Understand that joins also work for spatial contexts.
 
 ## Content
- - The [slides](slides.html) used to describe the topic.
- - A more verbose [narrative](narrative.html) on the general notion of joins with examples.
- - An [in class](in-class.html) example of walking through these kinds of data.
- - The data set used for this include some shapefiles (for the slides) frmo RVA as well as the `nycflights13` package of `data.frames` for NYC airport data.  This is used in both the slides and the in-class examples. 
+ - The [slides](https://dyerlabteaching.github.io/Joins/slides.html) used to describe the topic.
+ - A more verbose [narrative](https://dyerlabteaching.github.io/Joins/narrative.html) on the general notion of joins with examples.
+ - An [in class](https://dyerlabteaching.github.io/Joins/in-class.html) example of walking through these kinds of data.
+ - The data set used for this include some shapefiles (for the slides) from RVA as well as the `nycflights13` package of `data.frames` for NYC airport data.  This is used in both the slides and the in-class examples. 
 
 ## Contact Information
 
 If you need to contact me, I am available at:  
- - Email: rjdyer@vcu.edu
+ - Email: rjdyer@vcu.edu  
  - Twitter: [@dyerlab](https://twitter.com/dyerlab/)
 
 
