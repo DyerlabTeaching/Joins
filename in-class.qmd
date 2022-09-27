@@ -53,9 +53,81 @@ Using these data, we will asks some of the following questions about the data.
 > Which NYC airport has the worst departure delays?
 
 
+```{r}
+library( tidyverse )
+library( knitr )
+flights %>%
+  select( origin, dep_delay ) %>% # select origin & dep_delay
+  group_by( origin ) %>% # group_by( origin )
+  summarise( Maximum = max( dep_delay, na.rm=TRUE  ),   # summarize max origin & value
+             Mean = mean( dep_delay, na.rm=TRUE),
+             Median = median( dep_delay, na.rm=TRUE) ) %>%
+  left_join( airports, by=c("origin"="faa") ) %>%
+  select( Airport = name, 
+          Mean, Median, Maximum )   %>% # join with airport to get real name
+  kable()
+# make a table
 
-> Which models of aircraft have the largest average flight distance?
 
+```
+
+
+
+> Which models of aircraft have the longest average flight distance?
+
+```{r}
+flights %>%
+  select( distance, tailnum ) %>%
+  group_by( tailnum) %>%
+  summarize( dist = mean( distance, na.rm=TRUE ) ) %>%
+  left_join( planes, by="tailnum" ) %>%
+  select( model, dist ) %>%
+  arrange( -dist ) %>%
+  group_by( model ) %>%
+  summarize( dist = mean( dist, na.rm=TRUE ) ) %>%
+  arrange( -dist )
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+flights %>%
+  select( tailnum, distance ) %>%
+  group_by( tailnum ) %>%
+  summarise( dist = mean( distance, na.rm=TRUE ) ) %>%
+  left_join( planes ) %>%
+  select( dist, model ) %>%
+  group_by( model ) %>%
+  summarise( dist = mean( dist ) ) %>%
+  arrange( -dist ) %>% 
+  head()
+```
 
 
 > Which airlines has the most has the most on-time arrivals?

@@ -21,6 +21,7 @@ execute:
 ```{r}
 #| echo: false
 library( tidyverse )
+library( sf )
 ```
 
 
@@ -257,8 +258,6 @@ people %>%
 ```{r}
 #| echo: false
 #| results: hide
-library( sf )
-
 
 if( !file.exists("./data/Districts.zip") ) {
   district_url <- "https://github.com/dyerlab/ENVS-Lectures/raw/master/data/Zoning_Districts-shp.zip"
