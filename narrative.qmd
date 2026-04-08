@@ -128,10 +128,3 @@ The opposite of this is the `anti_join()` which drops everything in the left tab
 df.X %>%
   anti_join( df.Y )
 ```
-
-
-
-
-## Questions
-
-If you have any questions for me specifically on this topic, please post as an Issue in your repository, otherwise consider posting to the discussion board on [Canvas](https://canvas.vcu.edu).
