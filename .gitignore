@@ -49,3 +49,4 @@ Zoning_Districts.*
 Centerlines-shp/
 Roads.zip
 __MACOSX/*
+**/*.quarto_ipynb
