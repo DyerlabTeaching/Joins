@@ -29,7 +29,7 @@ df.Y
 
 ## Keys
 
-An important component of relational data are the *keys*.  These are unique identifiers for a particular datum from a table.  In each of these examples the variable (obviously named) `Key` is what is called a *Primary Key* because it uniquely identifies each row.  You can verify this by counting the number of entries then filtering only for ones with 2 or more instances.
+An important component of relational data is the *keys*.  These are unique identifiers for a particular datum from a table.  In each of these examples the variable (obviously named) `Key` is what is called a *Primary Key* because it uniquely identifies each row.  You can verify this by counting the number of entries and then filtering only for ones with 2 or more instances.
 
 ```{r}
 library( tidyverse )
@@ -41,7 +41,7 @@ df.X %>%
 Notice there is nothing here as each is unique.
 
 > The column `Key` is a Primary Key for the `df.X` data because it identifies a unique row *in that table*.
-In addition to a *Primary Key* we can have a *Foreign Key* when it is used to indicate data within a separate table.  For example, if I am interested to see if the smallest value in `df.X$X` corresponds with the smallest value in `df.Y$Y`, then I will be using the `Key` form `df.X` representing `max(X)` to find the value of `Y` in `df.Y` and evaluate if it is `max(Y)`.  This means that `df.X$Key` is a *Foreign Key* as it points to a row in the `df.Y` data frame.
+In addition to a *Primary Key* we can have a *Foreign Key* when it is used to indicate data within a separate table.  For example, if I am interested to see if the smallest value in `df.X$X` corresponds with the smallest value in `df.Y$Y`, then I will be using the `Key` from `df.X` representing `max(X)` to find the value of `Y` in `df.Y` and evaluate if it is `max(Y)`.  This means that `df.X$Key` is a *Foreign Key* as it points to a row in the `df.Y` data frame.
 
 The keys are used to link together different tables.
 
