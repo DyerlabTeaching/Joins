@@ -1,5 +1,5 @@
 ---
-title: "Joins In Class Activity"
+title: "In Class Activity - Joins"
 format: html
 execute:
   echo: true
