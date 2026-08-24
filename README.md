@@ -4,27 +4,35 @@
 
 ## Impetus
 
-We often keep data in several different `data.frame` objects (or tables in SQL databases).  Joins are a quick way to work with data from many different tables.
+We often keep data in several different `data.frame` objects (or tables in SQL databases). Joins are a quick way to work with data from many different tables.
 
-## Student Learning Objectives
+## Module Learning Objectives
 
-At the end of this topic, you should be able to:  
- - Explain the difference between a *primary* and *foreign* key.
- - Describe the differences in join types including full, left, right, inner, outer, semi and anti joins.
- - Understand that joins also work for spatial contexts.
+### Understand Relational Keys and Join Semantics
+
+> Learners will explain the difference between primary and foreign keys, and describe how full, left, right, inner, outer, semi, and anti joins differ in which rows they retain.
+
+- **Bloom's Levels:** Understand
+- **Reinforces:** Builds on the data container and data frame concepts from Data Containers and Tidyverse, applied to combining multiple tables.
+- **Notes:** The vocabulary here (primary/foreign key, join type) is standard across R, SQL, and GIS tools, not R-specific.
+
+### Apply Joins to Tabular and Spatial Data
+
+> Learners will execute joins across multiple `data.frame` objects, and recognize that the same join logic applies in spatial contexts for combining geographic data.
+
+- **Bloom's Levels:** Apply
+- **Reinforces:** Previews the spatial-join techniques used later in Shapefiles, using the `nycflights13` and RVA shapefile data sets as concrete practice.
+- **Notes:** Establishing that joins are not just a tabular-data operation is the key bridge to the spatial modules.
 
 ## Content
- - The [slides](https://dyerlabteaching.github.io/Joins/slides.html) used to describe the topic.
- - A more verbose [narrative](https://dyerlabteaching.github.io/Joins/narrative.html) on the general notion of joins with examples.
- - An [in class](https://dyerlabteaching.github.io/Joins/in-class.html) example of walking through these kinds of data.
- - The data set used for this includes some shapefiles (for the slides) from RVA as well as the `nycflights13` package of `data.frames` for NYC airport data.  This is used in both the slides and the in-class examples. 
+
+- The [slides](https://dyerlabteaching.github.io/Joins/slides.html) used to describe the topic.
+- A more verbose [narrative](https://dyerlabteaching.github.io/Joins/narrative.html) on the general notion of joins with examples.
+- An [in class](https://dyerlabteaching.github.io/Joins/in-class.html) example of walking through these kinds of data.
+- The data set used for this includes some shapefiles (for the slides) from RVA as well as the `nycflights13` package of `data.frames` for NYC airport data. This is used in both the slides and the in-class examples.
 
 ## Contact Information
 
-If you need to contact me, I am available at:  
- - Email: rjdyer@vcu.edu  
- - Twitter: [@dyerlab](https://twitter.com/dyerlab/)
-
-
-
-  
+If you need to contact me, I am available at:
+- Email: [rjdyer@vcu.edu](mailto://rjdyer@vcu.edu)
+- Web: [rodneydyer.com](https://rodneydyer.com)
