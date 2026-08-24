@@ -31,6 +31,14 @@ We often keep data in several different `data.frame` objects (or tables in SQL d
 - An [in class](https://dyerlabteaching.github.io/Joins/in-class.html) example of walking through these kinds of data.
 - The data set used for this includes some shapefiles (for the slides) from RVA as well as the `nycflights13` package of `data.frames` for NYC airport data. This is used in both the slides and the in-class examples.
 
+## Assessment
+
+- A [homework](https://dyerlabteaching.github.io/Joins/homework.html) assignment on the topic.
+
+## Logistics
+
+- A [Teaching Log](https://dyerlabteaching.github.io/Joins/log.html) record of delivery and notes.
+
 ## Contact Information
 
 If you need to contact me, I am available at:
