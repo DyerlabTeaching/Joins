@@ -1,10 +1,7 @@
 ---
 title: "Joins In Class Activity"
-format: 
-  html:
-    code-tools: true
-    toc: false
-execute: 
+format: html
+execute:
   echo: true
 ---
 
