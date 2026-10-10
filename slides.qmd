@@ -56,7 +56,7 @@ Consider the two tables to the right.
 :::
 
 ::: {.column width="50%"}
-![Example data table structure](https://live.staticflickr.com/65535/50427672632_24e45139a8_c_d.jpg)
+![Example data table structure](media/join_table_structure.jpg)
 :::
 
 ::::
@@ -136,7 +136,7 @@ We can combine the data in these tables in several different ways based upon wha
 
 ## 'Left' & 'Right' Tables
 
-![Example data table structure](https://live.staticflickr.com/65535/50427672632_24e45139a8_c_d.jpg)
+![Example data table structure](media/join_table_structure.jpg)
 
 
 
@@ -146,7 +146,7 @@ We can combine the data in these tables in several different ways based upon wha
 
 The outer join has *all the data from both left & right tables*.  All keys are present in the result.
 
-![](https://live.staticflickr.com/65535/50427993992_4ccede1574_c_d.jpg)
+![](media/join_outer.jpg)
 
 
 
@@ -166,7 +166,7 @@ people %>%
 
 The left join is one where the result has all the keys from the left but only those in the right one that are in the left.  
 
-![](https://live.staticflickr.com/65535/50427817371_678f0f64c7_c_d.jpg)
+![](media/join_left.jpg)
 
 
 :::{.fragment}
@@ -181,7 +181,7 @@ people %>% left_join( homework, by="Key")
 The Right join results in all the keys from the right data table and the matching ones from the left.
 
 
-![](https://live.staticflickr.com/65535/50427125528_0de6281475_c_d.jpg)
+![](media/join_right.jpg)
 
 
 :::{.fragment}
@@ -195,7 +195,7 @@ people %>% right_join( homework, by="Key")
 
 Inner joins result in the intersection of keys.
 
-![](https://live.staticflickr.com/65535/50427125683_ac44eb1500_c_d.jpg)
+![](media/join_inner.jpg)
 
 :::{.fragment}
 ```{r}
