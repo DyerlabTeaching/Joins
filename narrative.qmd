@@ -1,6 +1,6 @@
 ---
 title: "Joins"
-format: html
+format: dyerlab-narrative-html
 ---
 
 

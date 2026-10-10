@@ -1,6 +1,6 @@
 ---
 title: "In Class Activity - Joins"
-format: html
+format: dyerlab-html
 execute:
   echo: true
 ---
