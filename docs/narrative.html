@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Rarely do we work on only one <code>data.frame</code>, particularly when we start working with complex data and data contained within relational databases. In these cases, data are factored into several tables (akin to <code>data.frame</code> objects) with entries that connect the information from one table to another. Consider the following example tables</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://live.staticflickr.com/65535/50427672632_24e45139a8_c_d.jpg" class="img-fluid figure-img"></p>
+<p><img src="media/join_table_structure.jpg" class="img-fluid figure-img"></p>
 <figcaption>Example data table structure</figcaption>
 </figure>
 </div>
@@ -163,18 +163,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 <p>The keys are used to link together different tables.</p>
 </section>
-<section id="joins" class="level1">
-<h1>Joins</h1>
+<section id="joins" class="level2">
+<h2 class="anchored" data-anchor-id="joins">Joins</h2>
 <blockquote class="blockquote">
 <p>A <em>join</em> is where we combine information contained within two data frames.<br>
 Joins are ways to merge together data and come in four flavors.</p>
 </blockquote>
-<section id="left-join" class="level2">
-<h2 class="anchored" data-anchor-id="left-join">Left Join</h2>
+<section id="left-join" class="level3">
+<h3 class="anchored" data-anchor-id="left-join">Left Join</h3>
 <p>A <em>left join</em> is one where all the data from the left data frame is in the result and the data whose keys in the right data frame are present in the left one are also included. Graphically, this leads to:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://live.staticflickr.com/65535/50427817371_678f0f64c7_c_d.jpg" class="img-fluid figure-img"></p>
+<p><img src="media/join_left.jpg" class="img-fluid figure-img"></p>
 <figcaption>left join</figcaption>
 </figure>
 </div>
@@ -190,12 +190,12 @@ Joins are ways to merge together data and come in four flavors.</p>
 </div>
 </div>
 </section>
-<section id="right-join" class="level2">
-<h2 class="anchored" data-anchor-id="right-join">Right Join</h2>
+<section id="right-join" class="level3">
+<h3 class="anchored" data-anchor-id="right-join">Right Join</h3>
 <p>The right join does the same thing but keeps all the keys in the right data table and has missing data where the key in the left one is not in the right one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://live.staticflickr.com/65535/50427125528_0de6281475_c_d.jpg" class="img-fluid figure-img"></p>
+<p><img src="media/join_right.jpg" class="img-fluid figure-img"></p>
 <figcaption>Right Join</figcaption>
 </figure>
 </div>
@@ -211,12 +211,12 @@ Joins are ways to merge together data and come in four flavors.</p>
 </div>
 </div>
 </section>
-<section id="full-or-outer-join" class="level2">
-<h2 class="anchored" data-anchor-id="full-or-outer-join">Full (or Outer) Join</h2>
+<section id="full-or-outer-join" class="level3">
+<h3 class="anchored" data-anchor-id="full-or-outer-join">Full (or Outer) Join</h3>
 <p>This join is one where all the keys are retained adding missing data as necessary.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://live.staticflickr.com/65535/50427993992_4ccede1574_c_d.jpg" class="img-fluid figure-img"></p>
+<p><img src="media/join_outer.jpg" class="img-fluid figure-img"></p>
 <figcaption>Outer Join</figcaption>
 </figure>
 </div>
@@ -232,12 +232,12 @@ Joins are ways to merge together data and come in four flavors.</p>
 </div>
 </div>
 </section>
-<section id="inner-join" class="level2">
-<h2 class="anchored" data-anchor-id="inner-join">Inner Join</h2>
+<section id="inner-join" class="level3">
+<h3 class="anchored" data-anchor-id="inner-join">Inner Join</h3>
 <p>The last one retains <em>only</em> those keys that are common in both.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://live.staticflickr.com/65535/50427125683_ac44eb1500_c_d.jpg" class="img-fluid figure-img"></p>
+<p><img src="media/join_inner.jpg" class="img-fluid figure-img"></p>
 <figcaption>Inner Join</figcaption>
 </figure>
 </div>
@@ -252,8 +252,8 @@ Joins are ways to merge together data and come in four flavors.</p>
 </div>
 </section>
 </section>
-<section id="filtering-joins" class="level1">
-<h1>Filtering Joins</h1>
+<section id="filtering-joins" class="level2">
+<h2 class="anchored" data-anchor-id="filtering-joins">Filtering Joins</h2>
 <p>We can also use joins to filter values within one <code>data.frame</code>. Here the <code>semi_join()</code> keeps everything in the left data that has a key in the right one, but <strong>importantly</strong> it does not import the right data columns into the result.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.X <span class="sc">%&gt;%</span></span>
