@@ -3,7 +3,13 @@ title: "Joins"
 format: dyerlab-narrative-html
 ---
 
+<!-- BEGIN module:header — generated from module.yml; edit that, not this -->
 
+![](media/module_image.jpg){fig-alt="A flooded forest."}
+
+> Effectively storing data often requires the use of several data frames to reduce redundancy.  In this short chapter, we will cover how to join data from multiple sources.
+
+<!-- END module:header -->
 
 Rarely do we work on only one `data.frame`, particularly when we start working with complex data and data contained within relational databases.  In these cases, data are factored into several tables (akin to `data.frame` objects) with entries that connect the information from one table to another.   Consider the following example tables
 
@@ -46,7 +52,6 @@ In addition to a *Primary Key* we can have a *Foreign Key* when it is used to in
 The keys are used to link together different tables.
 
 
-
 ## Joins
 
 > A *join* is where we combine information contained within two data frames.  
@@ -67,7 +72,6 @@ df.X %>%
 ```
 
 
-
 ### Right Join
 
 The right join does the same thing but keeps all the keys in the right data table and has missing data where the key in the left one is not in the right one.
@@ -80,7 +84,6 @@ This is accomplished using the `right_join()` function.
 df.X %>%
   right_join( df.Y, by="Key")
 ```
-
 
 
 ### Full (or Outer) Join
@@ -106,10 +109,6 @@ The last one retains *only* those keys that are common in both.
 df.X %>%
   inner_join( df.Y, by="Key")
 ```
-
-
-
-
 
 
 ## Filtering Joins

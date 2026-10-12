@@ -1,0 +1,11 @@
+title: "Joins"
+repo: Joins
+image:
+  file: media/module_image.jpg
+  alt: "A flooded forest."
+epigraph: >-
+  Effectively storing data often requires the use of several data frames
+  to reduce redundancy.  In this short chapter, we will cover how to
+  join data from multiple sources.
+resources:
+  - "The data set used for this includes some shapefiles (for the slides) from RVA as well as the `nycflights13` package of `data.frames` for NYC airport data. This is used in both the slides and the in-class examples."
