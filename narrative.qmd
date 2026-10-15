@@ -39,8 +39,8 @@ An important component of relational data is the *keys*.  These are unique ident
 
 ```{r}
 library( tidyverse )
-df.X %>%
-  count( Key ) %>%
+df.X |>
+  count( Key ) |>
   filter( n > 1 )
 ```
 
@@ -67,7 +67,7 @@ A *left join* is one where all the data from the left data frame is in the resul
 Where in `R` we do this using the `left_join()` function. 
 
 ```{r}
-df.X %>%
+df.X |>
   left_join( df.Y, by="Key")
 ```
 
@@ -81,7 +81,7 @@ The right join does the same thing but keeps all the keys in the right data tabl
 This is accomplished using the `right_join()` function.
 
 ```{r echo=TRUE}
-df.X %>%
+df.X |>
   right_join( df.Y, by="Key")
 ```
 
@@ -94,7 +94,7 @@ This join is one where all the keys are retained adding missing data as necessar
 ![Outer Join](media/join_outer.jpg)
 
 ```{r}
-df.X %>%
+df.X |>
   full_join( df.Y, by="Key")
 ```
 
@@ -106,7 +106,7 @@ The last one retains *only* those keys that are common in both.
 ![Inner Join](media/join_inner.jpg)
 
 ```{r}
-df.X %>%
+df.X |>
   inner_join( df.Y, by="Key")
 ```
 
@@ -117,13 +117,13 @@ We can also use joins to filter values within one `data.frame`.  Here the `semi_
 
 
 ```{r}
-df.X %>%
+df.X |>
   semi_join( df.Y )
 ```
 
 The opposite of this is the `anti_join()` which drops everything in the left table that has a key in the right one, leaving only the ones that are unique.
 
 ```{r}
-df.X %>%
+df.X |>
   anti_join( df.Y )
 ```

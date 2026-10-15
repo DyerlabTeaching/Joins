@@ -75,7 +75,7 @@ A *primary key* is a column in a table that uniquely identifies a single row.  T
 people <- data.frame( Key = c("A","B","C"),
                       Name = c("Bob","Alice","Mary"),
                       Major = c("ENVS", "ENVS", "BIOL") )
-people %>%
+people |>
   count( Key ) 
 ```
 
@@ -156,7 +156,7 @@ The outer join has *all the data from both left & right tables*.  All keys are p
 All homework and people data.
 
 ```{r}
-people %>%
+people |>
   full_join( homework, by="Key" )
 ```
 
@@ -171,7 +171,7 @@ The left join is one where the result has all the keys from the left but only th
 
 :::{.fragment}
 ```{r}
-people %>% left_join( homework, by="Key")
+people |> left_join( homework, by="Key")
 ```
 :::
 
@@ -187,7 +187,7 @@ The Right join results in all the keys from the right data table and the matchin
 :::{.fragment}
 
 ```{r}
-people %>% right_join( homework, by="Key")
+people |> right_join( homework, by="Key")
 ```
 :::
 
@@ -199,7 +199,7 @@ Inner joins result in the intersection of keys.
 
 :::{.fragment}
 ```{r}
-people %>% inner_join( homework, by="Key")
+people |> inner_join( homework, by="Key")
 ```
 :::
 
@@ -223,7 +223,7 @@ We can also use joins to filter values within one `data.frame`.  Here the `semi_
 
 :::{.fragment}
 ```{r}
-people %>% 
+people |> 
   semi_join( homework, by="Key")
 ```
 :::
@@ -237,7 +237,7 @@ The opposite of the `semi_join()` is the `anti_join()` which drops everything in
 
 :::{.fragment}
 ```{r}
-people %>%
+people |>
   anti_join( homework, by = "Key")
 ```
 :::
@@ -286,14 +286,14 @@ library( nycflights13 )
 
 ```{r echo=FALSE}
 library( leaflet )
-airports %>%
+airports |>
   filter( lon < 0,
           lon > -130,
-          lat < 54) %>%
-  leaflet( ) %>%
+          lat < 54) |>
+  leaflet( ) |>
   addMarkers( lat = ~lat,
               lng = ~lon,
-              popup = ~faa) %>%
+              popup = ~faa) |>
   addProviderTiles( provider="OpenTopoMap")
 ```
 
