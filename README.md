@@ -25,7 +25,7 @@ We often keep data in several different `data.frame` objects (or tables in SQL d
 > Learners will execute joins across multiple `data.frame` objects, and recognize that the same join logic applies in spatial contexts for combining geographic data.
 
 - **Bloom's Levels:** Apply
-- **Reinforces:** Previews the spatial-join techniques used later in Shapefiles, using the `nycflights13` and RVA shapefile data sets as concrete practice.
+- **Reinforces:** Previews the spatial-join techniques used later in Vector Data, using the `nycflights13` and RVA shapefile data sets as concrete practice.
 - **Notes:** Establishing that joins are not just a tabular-data operation is the key bridge to the spatial modules.
 
 ## Content
