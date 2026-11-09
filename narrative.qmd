@@ -33,7 +33,7 @@ df.Y
 ```
 
 
-## Keys
+## Keys {.theory .application}
 
 An important component of relational data is the *keys*.  These are unique identifiers for a particular datum from a table.  In each of these examples the variable (obviously named) `Key` is what is called a *Primary Key* because it uniquely identifies each row.  You can verify this by counting the number of entries and then filtering only for ones with 2 or more instances.
 
@@ -52,7 +52,7 @@ In addition to a *Primary Key* we can have a *Foreign Key* when it is used to in
 The keys are used to link together different tables.
 
 
-## Joins
+## Joins {.theory .application}
 
 > A *join* is where we combine information contained within two data frames.  
 Joins are ways to merge together data and come in four flavors.  
@@ -111,7 +111,7 @@ df.X |>
 ```
 
 
-## Filtering Joins
+## Filtering Joins {.application}
 
 We can also use joins to filter values within one `data.frame`.  Here the `semi_join()` keeps everything in the left data that has a key in the right one, but **importantly** it does not import the right data columns into the result.
 
