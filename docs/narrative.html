@@ -138,8 +138,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 3   D 12</code></pre>
 </div>
 </div>
-<section id="keys" class="level2">
-<h2 class="anchored" data-anchor-id="keys">Keys</h2>
+<section id="keys" class="level2 theory application">
+<h2 class="theory application anchored" data-anchor-id="keys">Keys</h2>
 <p>An important component of relational data is the <em>keys</em>. These are unique identifiers for a particular datum from a table. In each of these examples the variable (obviously named) <code>Key</code> is what is called a <em>Primary Key</em> because it uniquely identifies each row. You can verify this by counting the number of entries and then filtering only for ones with 2 or more instances.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( tidyverse )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -169,8 +169,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 <p>The keys are used to link together different tables.</p>
 </section>
-<section id="joins" class="level2">
-<h2 class="anchored" data-anchor-id="joins">Joins</h2>
+<section id="joins" class="level2 theory application">
+<h2 class="theory application anchored" data-anchor-id="joins">Joins</h2>
 <blockquote class="blockquote">
 <p>A <em>join</em> is where we combine information contained within two data frames.<br>
 Joins are ways to merge together data and come in four flavors.</p>
@@ -258,8 +258,8 @@ Joins are ways to merge together data and come in four flavors.</p>
 </div>
 </section>
 </section>
-<section id="filtering-joins" class="level2">
-<h2 class="anchored" data-anchor-id="filtering-joins">Filtering Joins</h2>
+<section id="filtering-joins" class="level2 application">
+<h2 class="application anchored" data-anchor-id="filtering-joins">Filtering Joins</h2>
 <p>We can also use joins to filter values within one <code>data.frame</code>. Here the <code>semi_join()</code> keeps everything in the left data that has a key in the right one, but <strong>importantly</strong> it does not import the right data columns into the result.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.X <span class="sc">|&gt;</span></span>
